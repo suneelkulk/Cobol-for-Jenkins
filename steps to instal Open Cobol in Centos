@@ -2,6 +2,8 @@ sudo yum -y install libgmp3-dev libtool libdb-dev ncurses-dev libncurses-dev
 sudo yum install gmp gmp-devel libtool ncurses ncurses-devel ncurses-libs make
 sudo yum install libdbi libdbi-devel libtool-ltdl libtool-ltdl-devel db4 db4-devel
 sudo wget http://sourceforge.net/projects/open-cobol/files/gnu-cobol/3.0/gnucobol-3.0-rc1.tar.gz
+After this i got error "-bash: wget: command not found". Then i installed wget with below command
+sudo yum -y install wget --> After this abobe wget command in step 4 worked
 sudo tar xvf gnucobol-3.0-rc1.tar.gz
 cd gnucobol-3.0-rc1
 sudo ./configure --without-db
